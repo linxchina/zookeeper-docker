@@ -72,7 +72,6 @@ RUN set -eux; \
     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
 
 WORKDIR $DISTRO_NAME
-VOLUME ["$ZOO_DATA_DIR", "$ZOO_DATA_LOG_DIR", "$ZOO_LOG_DIR"]
 
 EXPOSE 2181 2888 3888 8080
 
